@@ -49,7 +49,7 @@ cp -R skills/*/ .claude/skills/
 claude --agent pm                    # or scout / engineer / qa / growth
 ```
 
-The agents refer to project files such as `equipo/bitacora.md` (team log) and `equipo/calidad/pendientes.txt`
+The agents refer to project files such as `team/log.md` (team log) and `team/quality/pending.txt`
 (review queue). Create them or change the paths to fit your project. Put your brand guide in `brand/BRAND.md`.
 
 ## License
