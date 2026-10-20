@@ -4,9 +4,8 @@ A **Claude Code agent team plus YouTube and Instagram skills**, built to run a f
 autonomous team. Agents find the content, build it, review it and package it, and a human gives the final yes before
 anything goes public.
 
-It was designed for a "dubbing karaoke" channel, where famous dubbed scenes have one character's voice removed so
-families can perform it live. That channel is produced with the companion repo **dub-karaoke-pipeline**. The roles,
-hand-offs and guardrails carry over to most content channels.
+The roles, hand-offs and guardrails work for most content channels: one agent picks the content, one builds it, one
+reviews it with fresh eyes, one packages it and grows the channel, and a PM keeps the log and talks to the human.
 
 ## What's inside
 

@@ -2,7 +2,7 @@
 
 A team of five [Claude Code](https://claude.com/claude-code) subagents that run a small YouTube channel end to end, with a human owner who approves everything before it goes public.
 
-They were designed for a "dubbing karaoke" project: famous scenes dubbed in Latin American Spanish have one or two characters' voices removed, with subtitles, a studio timecode and cue bars, so a family can dub those characters live at a party. The media pipeline (voice separation, diarization, transcription, rendering, verification, YouTube kits) lives in the companion repo **dub-karaoke-pipeline**; these agents operate it. The instructions reference that repo's paths (`scripts/`, `work/`, `output/`, `team/`, `proposals/`), whose folder names are Spanish.
+The instructions reference project folders such as `scripts/` (your production tools), `work/`, `output/`, `team/` and `proposals/`. Adapt the paths and the production steps to your own pipeline.
 
 The ideas carry over to any content pipeline: one agent picks, one builds, one reviews with fresh eyes, one packages and grows, and a PM keeps the log and talks to the human.
 

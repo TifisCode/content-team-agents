@@ -4,7 +4,7 @@ Twelve [Claude Code skills](https://docs.claude.com/en/docs/claude-code/skills) 
 
 They were adapted from MIT-licensed open-source skills (see [Attribution](#attribution)), translated into English, generalized, and stripped of everything that published automatically or called paid services. What is left is **instructions only**: no scripts, no API keys, no publishing.
 
-The examples use one niche throughout: a **dubbing-karaoke channel**, where famous scenes are posted with one character's voice removed so viewers can dub it live. Swap in your own niche; the methods are generic.
+The methods are generic. Adapt the examples to your own niche and audience.
 
 ## The skills
 

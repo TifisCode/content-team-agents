@@ -90,7 +90,7 @@ Everything you learn about **how to get more views, how to make better videos an
 
 ## Project tools
 - `scripts/youtube_kit.py [folders] [--miniaturas]`: A/B/C thumbnails, Short and `meta.json`. Per take, in `spec.json`, you can tune `miniatura_t`, `miniatura_foco`, `miniatura_espejo`, `miniatura_frase` and `miniatura_titulo`.
-- Channel-specific helpers you write for your own channel (not included in dub-karaoke-pipeline): a playlist sorter (→ `output/_youtube/playlists.json` and `meta.json["listas"]`), a banner/avatar generator, and a script that prints the JavaScript that fills YouTube Studio's upload dialog from a kit's `meta.json`.
+- Channel-specific helpers you write for your own channel (not included): a playlist sorter (→ `output/_youtube/playlists.json` and `meta.json["listas"]`), a banner/avatar generator, and a script that prints the JavaScript that fills YouTube Studio's upload dialog from a kit's `meta.json`.
 - `output/_youtube/playlist_descriptions.json`: the title and description of each playlist.
 
 ## YouTube Studio from Chrome (Claude in Chrome tools; load them with ToolSearch)
