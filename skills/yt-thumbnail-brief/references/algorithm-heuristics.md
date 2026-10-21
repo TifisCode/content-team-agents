@@ -80,8 +80,8 @@ two links are where this bundle spends its effort.
 - **Title sweet spot is 40 to 60 chars** even though the cap is 100. Mobile and
   the sidebar truncate around 60; front-load the click-deciding words.
 - **Thumbnail rules:** one clear focal point, a face with a legible emotion where
-  it fits, high contrast, and at most 3 to 4 words of text that the title does
-  not also say. It has to read at a 120-pixel mobile size.
+  it fits, high contrast, and 4 words or fewer of text that the title does
+  not also say. It has to read at a 168-pixel mobile size.
 - **CTR is contextual, not absolute.** A 4% CTR on a broad-appeal topic can out-
   earn a 10% CTR on a narrow one because impressions scale. Judge CTR against
   your own baseline, not a universal number.
@@ -161,6 +161,6 @@ two links are where this bundle spends its effort.
 - [ ] Chapters added if the video has clear sections.
 - [ ] First 30 seconds (or 3 on a Short) restate and pay off the title's promise.
 - [ ] No greeting or intro animation before the hook.
-- [ ] Thumbnail reads at 120 px: one focal point, legible emotion, <= 4 words.
+- [ ] Thumbnail reads at 168 px: one focal point, legible emotion, <= 4 words.
 - [ ] End screen / next-video set to continue the session.
 - [ ] The click the title earns is one the video honestly keeps.

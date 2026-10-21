@@ -64,7 +64,7 @@ and Y2/Y4/Y6 read weaker in the business/creator niche (noted in the reference).
    marker such as "leverage" or "game-changer" gets replaced), break stacked
    or hollow rule-of-three, strip reveal bridges ("Here's what nobody tells
    you") and sincerity framing ("honestly?", "real talk"). Replace an excess
-   em dash with a colon, never a period.
+   em dash with a colon, never a period. Nothing from your kill list in `brand/BRAND.md`.
 6. **Tag each variant** with its formula, char count, and primary goal, and flag
    the one to lead the Test & Compare with.
 7. **Approval card.** Show the variants with char counts. The user picks or asks
@@ -110,9 +110,13 @@ rules:
 This skill drafts; the human decides taste.
 
 - **Read first.** Before drafting, read `team/creative/taste.md` (past picks, rejections and the reasons) and `brand/BRAND.md`. Do not re-offer an idea the human already rejected.
-- **New format? Ask for references.** If this is a format the channel has not made before, ask the human for 2-3 reference examples of work they like before drafting anything.
-- **Deliver 2-3 options that differ on purpose, never one.** For example, one curiosity-led title, one keyword-led (search) title, and one that leads with the concrete payoff or number. Each option gets one line saying what it tests. Three variations of one idea count as one option.
+- **New format? Ask for references.** If this is a format the channel has not made before, ask the human for 3-5 varied references, each with "take this / not this", and store them in `team/creative/references/` before drafting anything.
+- **Deliver 2-3 numbered options (1, 2, 3) that differ by promise, never one.** A different promise, not different wording. For example, one curiosity-led title, one keyword-led (search) title, and one that leads with the concrete payoff or number. Each option gets one line saying what it tests. Three variations of one idea count as one option.
 - **Measurable checks (pass/fail, report values):** title length at most 100 UTF-16 units (an emoji counts as 2); the click-deciding keyword within the first ~40 characters; the key phrase before any colon; title and thumbnail text do not repeat the same words; the channel's fixed format is intact; no promise the first 30 seconds cannot keep. Run them on every option and fix failures before the human sees anything.
+- **Ask with the feedback card.** Put the options to the human with the feedback card in [HUMAN-INPUT.md](../../docs/HUMAN-INPUT.md): keep / drop (why) / combine, pointing at exact words. If the answer is loose, restate it in that shape and ask "confirm or override?" with your recommended answer.
+- **Copy principles.** Drafts follow [COPY-GUIDE.md](../../docs/COPY-GUIDE.md): specific beats clever, the swap test, `[NEED: …]` for missing facts, and the 7 editing passes.
+- **The owner wrote the copy?** Use the `copy-review` skill instead of rewriting it.
+- **A/B results are judged by watch-time share** (what YouTube's Test & Compare uses), not CTR. Log them that way as evidence in the taste log.
 - **Taste questions go to the human.** Anything with no measurable way to fail (which option is more clickable, funnier, more on-brand in feel, whether it "sounds like us") is a taste question. Put it to the human as a question; do not answer it yourself.
 - **Never call creative work "good" on your own judgment.** Report which checks passed and with what values. Say "ready for your call", not "looks great".
 - **Log the verdict.** Record the human's pick and their one-sentence reason in `team/creative/taste.md` (or hand it to the project manager to log). If the same preference appears twice, suggest it as a rule for `brand/BRAND.md`; the human approves the rule.

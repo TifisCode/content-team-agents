@@ -14,11 +14,12 @@ Templates for all of these are in [`../examples/`](../examples/).
 | `team/quality/pending.txt` | Engineer, Growth | QA | One piece id per line (e.g. `0012_t1`). Lines starting with `#` are comments or batch headers |
 | `team/quality/approved.txt` | QA | Growth, PM | One piece id per line, plus `# <date> QA` batch headers |
 | `team/quality/checks.tsv` | QA | PM | Tab-separated: `date  piece  check_id  result  value  note`. `result` is `PASS`, `FAIL` or `NA` |
-| `team/creative/briefs/<date>-<piece>.md` | Growth | QA, human | Goal, audience, constraints, "must not look like", options A/B/C with what each tests |
-| `team/creative/taste.md` | PM | Growth (before every brief) | See [CREATIVE-LOOP.md](CREATIVE-LOOP.md#taste-log-format-teamcreativetastemd) |
+| `team/creative/briefs/<date>-<piece>.md` | Growth | QA, human | Goal, audience, one viewer, one idea, constraints, "must not look like", numbered options 1/2/3 with what each tests, and the feedback card ([HUMAN-INPUT.md](HUMAN-INPUT.md)) |
+| `team/creative/references/` | Owner (Growth asks), PM curates | Growth (before every brief) | One line or file per reference: `<link or image> · take this: … · not this: … · added by · date`. Stale ones get a `retired` note, never deleted |
+| `team/creative/taste.md` | PM | Growth (before every brief) | See [CREATIVE-LOOP.md](CREATIVE-LOOP.md#taste-log-format-teamcreativetastemd): Applies to, Evidence, Status (`active` · `watch` · `retired`) |
 | `team/quality/owner_signoff.tsv` | PM | Growth (before any publish) | Tab-separated: `date  piece  format  verdict  feedback`. `verdict` is `approved`, `changes` or `rejected`. `format` is e.g. `video`, `short`, `reel`, `post` |
 | `team/log.md` | Every agent | PM, human | Newest first: `## <date> <agent>` + what was done, what is blocked, what is next |
-| `brand/BRAND.md` | Human (PM proposes) | Everyone | Your brand guide: palette, fonts, thumbnail formula, voice, and the rules promoted from the taste log |
+| `brand/BRAND.md` | Human (PM proposes) | Everyone | Your brand guide: palette, fonts, thumbnail formula, voice ("We are / We are not", kill list, per-surface rules), and the rules promoted from the taste log |
 
 Piece ids: pick one convention and never change it. For example `<4-digit item>_t<take>` (`0012_t1`), or
 `<item>_short` for a Short.

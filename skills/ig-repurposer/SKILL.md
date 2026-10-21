@@ -33,11 +33,11 @@ idea, and rebuilds the delivery for Instagram.
 
 Not for a blank-page draft (use `ig-caption-writer` for a single caption,
 `ig-carousel-planner` for a slide-by-slide carousel) and not for reviewing an
-already-Instagram draft (use `ig-humanizer --mode audit`).
+already-Instagram draft (use `copy-review`).
 
 ## How it works
 
-**Voice profile first (all drafts).** If `references/voice-profile.md` has `filled: yes`, load it and match the user's voice fingerprint, hard rules, and CTA/link style throughout. If it is not filled, mention once that `ig-humanizer --mode profile` can learn their voice from a few posts, then proceed with the generic voice rules.
+**Voice rules first (all drafts).** Load your kill list and voice rules in `brand/BRAND.md` (build them from what the owner actually deletes; generic AI-word lists are mostly English), plus the active entries in `team/creative/taste.md`, and match them throughout (hard rules, CTA and link style). If BRAND.md has no voice section yet, say so once and proceed with the generic rules in `references/voice-rules.md`.
 
 **Never invent the specifics.** The rules below ask for a concrete number, a date and a named entity, because that is what separates a real post from a generated one. Take them from what the user actually said in this conversation. **Do not invent a figure, a date, a client name or a result, and do not soften a vague claim into a plausible-looking number.** If the user has nothing concrete for a beat, ask them once, and if they still have nothing, drop the claim rather than decorate it. A published invented number is a retraction; a missing one is only a weaker post.
 
@@ -72,12 +72,13 @@ already-Instagram draft (use `ig-humanizer --mode audit`).
    `ig-hashtag-strategist`). Place them
    as one block at the END of the caption or in the first comment, never as a
    mid-text wall.
-9. **Humanizer pass.** Run `ig-humanizer` V3 on the result: 2026 AI vocab by
-   paragraph density, em dashes above the cap (about one per 100 words, never
+9. **Humanizer pass.** Check the result against your kill list and voice rules in
+   `brand/BRAND.md` (build them from what the owner actually deletes; generic
+   AI-word lists are mostly English). Then scrub AI vocab by paragraph density, em dashes above the cap (about one per 100 words, never
    swapped for a period), stacked rule-of-three triads, generic openers and
    reveal bridges. Fix only a paragraph that reads machine-flat; never
    manufacture variance. Keep the user's real numbers and named entities from
-   the source.
+   the source. Optional external tools: the humanizer in upstream [sergebulaev/instagram-skills](https://github.com/sergebulaev/instagram-skills) or [blader/humanizer](https://github.com/blader/humanizer) (MIT).
 10. **Approval card.** Show: source -> Instagram mapping (what became what), the
     container (single caption or N-slide carousel), formula used, the hook (flag
     if over 125 chars), hashtag set, the media the user must attach, primary goal.
@@ -151,9 +152,12 @@ rules:
 This skill drafts; the human decides taste.
 
 - **Read first.** Before drafting, read `team/creative/taste.md` (past picks, rejections and the reasons) and `brand/BRAND.md`. Do not re-offer an idea the human already rejected.
-- **New format? Ask for references.** If this is a format the channel has not made before, ask the human for 2-3 reference examples of work they like before drafting anything.
-- **Deliver 2-3 options that differ on purpose, never one.** For example, one that keeps the Short's hook, one that re-hooks with a new first line, and one that restructures the opening for the Reel's fold. Each option gets one line saying what it tests. Three variations of one idea count as one option.
+- **New format? Ask for references.** If this is a format the channel has not made before, ask the human for 3-5 varied references, each with "take this / not this", and store them in `team/creative/references/` before drafting anything.
+- **Deliver 2-3 numbered options (1, 2, 3) that differ on purpose, never one.** For example, one that keeps the Short's hook, one that re-hooks with a new first line, and one that restructures the opening for the Reel's fold. Each option gets one line saying what it tests. Three variations of one idea count as one option.
 - **Measurable checks (pass/fail, report values):** hook within the first 125 characters of the new caption; every YouTube-only cue ("related video", end cards, text placed for YouTube buttons) removed; key text inside the safe zone of the Reel; a cover frame chosen and legible at feed size; 3-5 hashtags; credit to the original rights holder kept. Run them on every option and fix failures before the human sees anything.
+- **Ask with the feedback card.** Put the options to the human with the feedback card in [HUMAN-INPUT.md](../../docs/HUMAN-INPUT.md): keep / drop (why) / combine, pointing at exact words. If the answer is loose, restate it in that shape and ask "confirm or override?" with your recommended answer.
+- **Copy principles.** Drafts follow [COPY-GUIDE.md](../../docs/COPY-GUIDE.md): specific beats clever, the swap test, `[NEED: …]` for missing facts, and the 7 editing passes.
+- **The owner wrote the copy?** Use the `copy-review` skill instead of rewriting it.
 - **Taste questions go to the human.** Anything with no measurable way to fail (which option is more clickable, funnier, more on-brand in feel, whether it "sounds like us") is a taste question. Put it to the human as a question; do not answer it yourself.
 - **Never call creative work "good" on your own judgment.** Report which checks passed and with what values. Say "ready for your call", not "looks great".
 - **Log the verdict.** Record the human's pick and their one-sentence reason in `team/creative/taste.md` (or hand it to the project manager to log). If the same preference appears twice, suggest it as a rule for `brand/BRAND.md`; the human approves the rule.
@@ -164,4 +168,4 @@ This skill drafts; the human decides taste.
 - `ig-caption-writer` - write a fresh single caption from scratch
 - `ig-carousel-planner` - structure a slide-by-slide carousel (repurposer hands long builds here) *(upstream, not included here)*
 - `ig-hashtag-strategist` - build the sized hashtag set
-- `ig-humanizer` - scrub AI tells, plus `--mode audit` to review the result *(upstream, not included here)*
+- `copy-review` - check a caption the owner wrote, without rewriting it

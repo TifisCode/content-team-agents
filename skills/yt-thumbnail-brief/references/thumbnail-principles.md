@@ -1,7 +1,7 @@
 # Thumbnail Principles - 2026
 
 The thumbnail is half of the click. It is read in under a second, at roughly
-120 pixels wide on a phone, next to a dozen competitors. This reference is the
+168 pixels wide on a phone, next to a dozen competitors. This reference is the
 shared design language the `yt-thumbnail-brief` skill turns into a brief a
 designer (or an image tool) can execute. It is principles, not a Photoshop
 manual.
@@ -36,9 +36,9 @@ visual promise that complements the title.
 3. **High contrast and separation.** The subject must pop off the background.
    Use a rim light, a blurred or darkened background, or a bold color the
    competitors are not using. It has to survive being shrunk to a sidebar.
-4. **At most 3 to 4 words of text**, and words the title does NOT also say. Big,
+4. **4 words or fewer of text**, and words the title does NOT also say. Big,
    legible, high-contrast type. The text adds the angle the image cannot show.
-5. **Reads at 120 pixels.** Before approving anything, shrink it to thumbnail
+5. **Reads at 168 pixels.** Before approving anything, shrink it to thumbnail
    size on a phone. If you cannot tell what it is, it fails, no matter how good
    it looks at full size.
 
@@ -54,7 +54,7 @@ seen together. Split the load:
 | "7 tricks that doubled retention" | the retention graph spiking + a shocked face |
 
 If the title already has the words, the thumbnail does not need them. Use the
-thumbnail's 3 to 4 words for the angle the title left out.
+thumbnail's 4 words or fewer for the angle the title left out.
 
 ## Composition cues
 
@@ -68,11 +68,11 @@ thumbnail's 3 to 4 words for the angle the title left out.
   with both the subject and what is trending in your niche's feed. Reds, yellows,
   and cyans pop; muted earth tones disappear in the feed.
 - **Negative space is allowed.** A clean thumbnail with one subject and breathing
-  room often beats a busy collage. Clutter reads as noise at 120 px.
+  room often beats a busy collage. Clutter reads as noise at 168 px.
 
 ## Text rules
 
-- 3 to 4 words maximum. One idea.
+- 4 words maximum. One idea.
 - Heavy weight, large size, high contrast, with an outline or drop shadow so it
   survives any background.
 - Never the same words as the title.
@@ -87,7 +87,7 @@ thumbnail's 3 to 4 words for the angle the title left out.
 - The expression must match the video. A shocked face on a calm tutorial is a
   broken promise the retention graph will punish.
 - Close crop: eyes and mouth are the signal. A tiny face in a wide shot loses at
-  120 px.
+  168 px.
 - Faceless channels lean harder on the result, the object, or a bold text-and-
   contrast design.
 
@@ -122,9 +122,9 @@ an image tool can execute:
 
 - **Concept name and the angle** it sells (and how it complements the title).
 - **Focal subject** (face + which emotion, or the object / result).
-- **Text overlay**: the exact 3 to 4 words, and where they sit.
+- **Text overlay**: the exact words (4 or fewer), and where they sit.
 - **Background and contrast** direction (color, lighting, separation).
 - **Composition** (rule-of-thirds placement, gaze direction, crop).
-- **The 120-pixel test note**: what must still read when shrunk.
+- **The 168-pixel test note**: what must still read when shrunk.
 - **2 to 3 variants** for Test & Compare, each varying one big element.
 

@@ -30,7 +30,7 @@ COMPOSITION
 {rule-of-thirds placement; gaze direction; crop (close on eyes/mouth for a face);
 foreground/background depth}
 
-120-PIXEL TEST
+168-PIXEL TEST
 {what must still read when shrunk to phone size; what to drop if it does not}
 ```
 
@@ -60,7 +60,7 @@ COMPOSITION
 Face on the right third, gaze toward the text on the left; tight crop on the head
 and shoulders; timeline soft in the background
 
-120-PIXEL TEST
+168-PIXEL TEST
 The face and "3 DAYS" must read at thumbnail size; drop the timeline detail if it
 turns to mush
 ```
@@ -85,4 +85,4 @@ viewer, not just the most clicks.
 - [ ] A legible, real emotion (if a face).
 - [ ] High contrast and subject separation.
 - [ ] 4 words or fewer of text, not repeating the title.
-- [ ] Reads at 120 pixels on a phone.
+- [ ] Reads at 168 pixels on a phone.

@@ -68,7 +68,7 @@ around.
    swapped for a period), break stacked or hollow rule-of-three, strip reveal
    bridges ("The result?", "Here's what") and sincerity openers ("not gonna
    lie", "let me be honest"). Never add a hedge or a confession the creator did
-   not write. Sound like the creator, not a brand account.
+   not write. Sound like the creator, not a brand account. Nothing from your kill list in `brand/BRAND.md`.
 5. **Approval card.** Show the post (and poll options) as a copy-paste block.
    The owner approves it and posts it by hand in the Community tab.
 
@@ -120,9 +120,12 @@ This skill does not generate or upload images.
 This skill drafts; the human decides taste.
 
 - **Read first.** Before drafting, read `team/creative/taste.md` (past picks, rejections and the reasons) and `brand/BRAND.md`. Do not re-offer an idea the human already rejected.
-- **New format? Ask for references.** If this is a format the channel has not made before, ask the human for 2-3 reference examples of work they like before drafting anything.
-- **Deliver 2-3 options that differ on purpose, never one.** For example, one poll, one behind-the-scenes text update, and one teaser of the next video. Each option gets one line saying what it tests. Three variations of one idea count as one option.
+- **New format? Ask for references.** If this is a format the channel has not made before, ask the human for 3-5 varied references, each with "take this / not this", and store them in `team/creative/references/` before drafting anything.
+- **Deliver 2-3 numbered options (1, 2, 3) that differ on purpose, never one.** For example, one poll, one behind-the-scenes text update, and one teaser of the next video. Each option gets one line saying what it tests. Three variations of one idea count as one option.
 - **Measurable checks (pass/fail, report values):** post text within the platform's length limits; one call to action only; poll has 2-4 options; no engagement bait or subscribe demand; spelling and the opening/closing punctuation of the audience's language correct; nothing invented (numbers, dates, results come from the human). Run them on every option and fix failures before the human sees anything.
+- **Ask with the feedback card.** Put the options to the human with the feedback card in [HUMAN-INPUT.md](../../docs/HUMAN-INPUT.md): keep / drop (why) / combine, pointing at exact words. If the answer is loose, restate it in that shape and ask "confirm or override?" with your recommended answer.
+- **Copy principles.** Drafts follow [COPY-GUIDE.md](../../docs/COPY-GUIDE.md): specific beats clever, the swap test, `[NEED: …]` for missing facts, and the 7 editing passes.
+- **The owner wrote the copy?** Use the `copy-review` skill instead of rewriting it.
 - **Taste questions go to the human.** Anything with no measurable way to fail (which option is more clickable, funnier, more on-brand in feel, whether it "sounds like us") is a taste question. Put it to the human as a question; do not answer it yourself.
 - **Never call creative work "good" on your own judgment.** Report which checks passed and with what values. Say "ready for your call", not "looks great".
 - **Log the verdict.** Record the human's pick and their one-sentence reason in `team/creative/taste.md` (or hand it to the project manager to log). If the same preference appears twice, suggest it as a rule for `brand/BRAND.md`; the human approves the rule.

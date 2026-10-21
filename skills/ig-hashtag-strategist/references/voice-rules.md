@@ -29,7 +29,7 @@ them. Skill-local "Hard rules" sections only add format-specific overrides
 ## Vocabulary markers (density-scored)
 
 Count these per paragraph. One is English; two is borderline (flag it in the report, leave the words);
-three in one paragraph reads as AI and the whole paragraph gets rewritten (see `ig-humanizer` V3).
+three in one paragraph reads as AI and the whole paragraph gets rewritten (see your kill list and voice rules in `brand/BRAND.md`).
 The durable 2026 set (significant, crucial, notably, particularly,
 comprehensive, insights, robust, leverage, foster, landscape, nuanced,
 streamline, elevate, empower) counts alongside the older corporate words:

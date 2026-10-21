@@ -25,21 +25,35 @@ human.**
 ## The loop
 
 ```
-1. BRIEF      Growth writes a brief: goal, audience, constraints, what it must NOT look like.
-              New format? Ask the human for 2–3 reference examples first.
-2. OPTIONS    Growth drafts 2–3 options that differ on purpose (not three variations of one idea), each with
-              one line on what it is testing.
+1. BRIEF      Growth writes a brief: goal, one viewer, one idea, constraints, what it must NOT look like.
+              New format? Ask the human for 3–5 varied references, each with "take this / not this",
+              and store them in team/creative/references/.
+2. OPTIONS    Growth drafts 2–3 NUMBERED options that differ on purpose (a different promise, not
+              different wording), each with one line on what it tests. Copy follows COPY-GUIDE.md.
 3. CHECKS     QA runs the measurable checks on every option (legibility at phone size, safe zones,
-              length, brand colors, typos). Failures go back before the human sees anything.
-4. TASTE      The human picks, rejects or redirects, with one sentence on why.
-5. ITERATE    Growth applies the feedback. Repeat 2–5 until the human says yes.
-6. REMEMBER   The PM appends the decision and the reason to team/creative/taste.md. When the same
-              preference shows up twice, the PM proposes it as a rule in brand/BRAND.md (the human
-              approves the rule).
+              length, swap test, kill list, reader test by a fresh agent). Failures go back before
+              the human sees anything.
+4. TASTE      The human answers with the feedback card (HUMAN-INPUT.md): keep / drop (why) / combine,
+              pointing at exact words. Loose feedback is fine: Growth restates it in that shape and
+              asks "confirm or override?" with a recommended answer.
+5. ITERATE    Growth applies the feedback. Repeat 2–5 until the human says yes. If the human rewrites
+              something, that edit is the feedback: Growth diffs it against its draft.
+6. REMEMBER   The PM appends the decision, the reason and the evidence to team/creative/taste.md.
+              When the same preference shows up twice, the PM proposes it as a rule in brand/BRAND.md
+              (the human approves the rule).
 ```
 
-Every new brief starts by reading `team/creative/taste.md` and `brand/BRAND.md`, so the team doesn't repeat a
-rejected idea.
+Every new brief starts by reading `team/creative/taste.md`, `team/creative/references/` and `brand/BRAND.md`, so
+the team doesn't repeat a rejected idea.
+
+**When the human writes the copy**, the loop flips: the agents protect the human's voice and only check it. The
+[`copy-review`](../skills/copy-review/SKILL.md) skill diagnoses the input (build, polish or point edit), runs the
+measurable checks, shows the 3–5 guidelines that apply and suggests at most two optional, rule-backed changes. It
+never rewrites unasked and never scores. Two guides, one for each side:
+
+- [HUMAN-INPUT.md](HUMAN-INPUT.md): for **you**. The feedback card, how to give references, your kill list, and
+  writing copy yourself.
+- [COPY-GUIDE.md](COPY-GUIDE.md): for **everyone**. The copy principles, each marked [check] or [taste].
 
 ## A real example: one promo image, three rounds
 
@@ -78,19 +92,30 @@ bold technical title, the owner's photo; never a generic AI palette."* The next 
 
 ```markdown
 ## 2026-10-20 · promo image for LinkedIn/X
-- Options: A AI infographic (navy/amber) · B composed thumbnail-style (black/red/orange + owner photo)
-- Verdict: B, after one change (HD photo)
-- Why: "A's colors are horrible"; B reads technical and specific
+- Options: 1 AI infographic (navy/amber) · 2 composed thumbnail-style (black/red/orange + owner photo)
+- Verdict: KEEP 2 after one change (HD photo) · DROP 1 (off-brand: "the colors are horrible")
+- Why: 2 reads technical and specific
+- Applies to: repo and LinkedIn/X art
+- Evidence: owner verdict          (or: A/B test, watch-time share 58/42, n = 3,100 impressions)
+- Status: active                    (active · watch · retired)
 - Rule proposed: repo art = dark background, bold technical title, owner photo → added to BRAND.md (approved)
 ```
 
-Keep entries short. The point is that the next brief can search them.
+- **Evidence** separates the owner's taste from a measured result. Both count, but a measured result can retire a
+  taste rule, and the other way around needs the owner.
+- **Status** keeps the log useful: about 20 **active** entries at most. Entries that stop applying move to
+  **retired**, they're never deleted. **Watch** is for a preference seen only once.
+- **The human's direct edits** are logged too: "owner replaced 'Ultimate' with '3 steps' → prefers concrete over
+  hype".
 
 ## What this means for each agent
 
 - **Growth** never sends a single creative option to the human, and never sends one that hasn't passed QA's checks.
+  It never "improves" copy the human wrote: it runs `copy-review` and suggests at most two changes.
 - **QA** grades only what can fail. QA never writes "looks good" about creative work. It writes which checks
   passed, with values.
-- **PM** owns the memory: it logs every verdict and turns repeated preferences into brand rules once the human
-  approves them.
+- **PM** owns the memory: it logs every verdict (and every human edit) with its evidence and status, curates
+  `team/creative/references/`, and turns repeated preferences into brand rules once the human approves them. When
+  the brand guide is silent or contradicts itself, it asks the human "confirm or override?" with a recommended
+  answer.
 - **The human** gives direction and the final yes. Nothing creative goes public on the agents' judgment alone.

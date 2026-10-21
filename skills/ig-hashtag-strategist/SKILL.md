@@ -117,7 +117,7 @@ rules:
 This skill drafts; the human decides taste.
 
 - **Read first.** Before drafting, read `team/creative/taste.md` (past picks, rejections and the reasons) and `brand/BRAND.md`. Do not re-offer an idea the human already rejected.
-- **New format? Ask for references.** If this is a format the channel has not made before, ask the human for 2-3 reference examples of work they like before drafting anything.
+- **New format? Ask for references.** If this is a format the channel has not made before, ask the human for 3-5 varied references, each with "take this / not this", and store them in `team/creative/references/` before drafting anything.
 - **Deliver 2-3 options that differ on purpose, never one.** For example, one set weighted to niche tags, one mixing the format with the topic, and one leaning on a community or event tag. Each option gets one line saying what it tests. Three variations of one idea count as one option.
 - **Measurable checks (pass/fail, report values):** 3-5 tags in total, not a wall of tags; a mix of niche, mid and broad sizes (no all-broad set); every tag relevant to the post; no banned or spammy tags; no invented branded tag unless the brand guide defines one; post counts verified in the app. Run them on every option and fix failures before the human sees anything.
 - **Taste questions go to the human.** Anything with no measurable way to fail (which option is more clickable, funnier, more on-brand in feel, whether it "sounds like us") is a taste question. Put it to the human as a question; do not answer it yourself.

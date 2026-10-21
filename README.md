@@ -2,7 +2,7 @@
 
 **YouTube marketing automation with Claude Code, with a human making every creative call.**
 
-Five [Claude Code](https://claude.com/claude-code) subagents and twelve YouTube/Instagram skills that run the daily
+Five [Claude Code](https://claude.com/claude-code) subagents and thirteen YouTube/Instagram skills that run the daily
 work of a content channel. They find ideas, build the pieces, review them against measurable checks, package them
 and track growth. **You stay in charge of taste.**
 
@@ -20,6 +20,11 @@ safe verdict. This repo is built around that fact:
 - **The team learns your taste.** Every decision goes into a taste log. When a preference repeats, the PM proposes
   it as a brand rule, and the next brief starts from there.
 
+**When you give input, the team gives you guidance back.** Every request for a decision comes with a 30-second
+feedback card (keep / drop / combine, pointing at exact words). When you write copy yourself, the `copy-review`
+skill checks it against the [copy guide](docs/COPY-GUIDE.md) and shows you the guidelines that apply, without
+rewriting your voice. See [docs/HUMAN-INPUT.md](docs/HUMAN-INPUT.md).
+
 There's a real example in [docs/CREATIVE-LOOP.md](docs/CREATIVE-LOOP.md): the launch image for this repo. The
 agent's first version was technically flawless and got rejected ("the colors are horrible"). Three rounds later,
 with the human's references, photo and direction, it was the one that got posted.
@@ -29,8 +34,10 @@ with the human's references, photo and direction, it was the one that got posted
 | | |
 |---|---|
 | [`agents/`](agents/) | **PM**, **Scout**, **Engineer**, **QA** and **Growth**: who does what, the hand-off flow and an example daily schedule |
-| [`skills/`](skills/) | YouTube: A/B titles, thumbnail briefs, Shorts packaging, analytics diagnosis, community posts, channel audit, audience insights. Instagram/Facebook: captions, hashtags, profile audit, Short-to-Reel, hook analysis |
+| [`skills/`](skills/) | **Copy review for your own copy.** YouTube: A/B titles, thumbnail briefs, Shorts packaging, analytics diagnosis, community posts, channel audit, audience insights. Instagram/Facebook: captions, hashtags, profile audit, Short-to-Reel, hook analysis |
 | [`docs/CREATIVE-LOOP.md`](docs/CREATIVE-LOOP.md) | Checks vs. taste, brief → options → checks → human call → taste log |
+| [`docs/HUMAN-INPUT.md`](docs/HUMAN-INPUT.md) | **For you:** the feedback card, references, your kill list, writing copy yourself |
+| [`docs/COPY-GUIDE.md`](docs/COPY-GUIDE.md) | Copy principles for titles, hooks, captions and posts, each marked [check] or [taste] |
 | [`docs/HANDOFFS.md`](docs/HANDOFFS.md) | The files agents pass to each other, their formats, validation and troubleshooting |
 | [`examples/`](examples/) | Templates for every file the agents read and write |
 | [`QUICKSTART.md`](QUICKSTART.md) | Install, make it yours, and run your first day |

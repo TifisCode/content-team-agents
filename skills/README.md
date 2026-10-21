@@ -1,17 +1,18 @@
 # Content skills for YouTube, Instagram and Facebook
 
-Twelve [Claude Code skills](https://docs.claude.com/en/docs/claude-code/skills) that help a small team (or a team of agents) grow a video channel: titles, thumbnails, Shorts, community posts, analytics, comments, captions, hashtags and profiles.
+Thirteen [Claude Code skills](https://docs.claude.com/en/docs/claude-code/skills) that help a small team (or a team of agents) grow a video channel: titles, thumbnails, Shorts, community posts, analytics, comments, captions, hashtags and profiles.
 
 They were adapted from MIT-licensed open-source skills (see [Attribution](#attribution)), translated into English, generalized, and stripped of everything that published automatically or called paid services. What is left is **instructions only**: no scripts, no API keys, no publishing.
 
 The methods are generic. Adapt the examples to your own niche and audience.
 
-**These skills draft; you decide.** Measurable work (title length, safe zones, hashtag counts, legibility at phone size) can be checked by an agent. Taste cannot. Every creative skill here delivers 2-3 deliberately different options, each with a line on what it tests, runs the measurable checks, and then hands the taste call to a human, who also logs the pick and the reason so the next brief starts from it. The analysis skills end the same way: the diagnosis is evidence, and the human chooses the actions. See [../docs/CREATIVE-LOOP.md](../docs/CREATIVE-LOOP.md) for the full loop.
+**These skills draft; you decide.** Measurable work (title length, safe zones, hashtag counts, legibility at phone size) can be checked by an agent. Taste cannot. Every creative skill here delivers 2-3 numbered options that differ on purpose (a different promise, not different wording), each with a line on what it tests, follows [../docs/COPY-GUIDE.md](../docs/COPY-GUIDE.md), runs the measurable checks, and then hands the taste call to a human with the feedback card from [../docs/HUMAN-INPUT.md](../docs/HUMAN-INPUT.md). The pick and the reason are logged so the next brief starts from them. When the human wrote the copy, `copy-review` checks it instead of rewriting it. The analysis skills end the same way: the diagnosis is evidence, and the human chooses the actions. See [../docs/CREATIVE-LOOP.md](../docs/CREATIVE-LOOP.md) for the full loop.
 
 ## The skills
 
 | Skill | What it produces |
 |---|---|
+| `copy-review` | **For copy the human wrote.** Diagnoses it (build, polish or point edit), runs the measurable checks, shows the 3–5 guidelines that apply and suggests at most two optional, rule-backed changes. Protects the owner's voice; never rewrites unasked, never scores. Original to this repo. |
 | `yt-analytics-diagnosis` | A channel health report from YouTube Studio screenshots or CSV exports: funnel (impressions → CTR → retention → subscribers), retention patterns, traffic sources, outliers, and at most 5 prioritized actions. |
 | `yt-audience-insights` | A read of a video's or channel's comments: recurring themes and requests, superfans, sentiment, and which comments to reply to or pin (reply drafts). |
 | `yt-channel-optimizer` | A channel-page scorecard (name, banner, About, trailer, featured video, sections, playlists, watermark, links) with before/after rewrites. |

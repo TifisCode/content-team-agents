@@ -128,4 +128,4 @@ rules:
 - `ig-caption-writer` - write the captions the optimized profile and grid will host
 - `ig-hook-extractor` - find a pin-worthy hook in a post that already worked
 - `ig-content-planner` - plan the cadence that fills the grid and highlights *(upstream, not included here)*
-- `ig-humanizer --mode audit` - audit the bio and pinned captions before shipping *(upstream, not included here)*
+- `copy-review` - check the bio and pinned captions against your kill list and voice rules in `brand/BRAND.md` (build them from what the owner actually deletes; generic AI-word lists are mostly English)

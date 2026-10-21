@@ -106,7 +106,7 @@ it out of the draft, and let the user decide. Full rule:
 This skill is an analysis aid: the teardown is evidence, and the human decides taste.
 
 - **Read first.** Before drafting, read `team/creative/taste.md` (past picks, rejections and the reasons) and `brand/BRAND.md`. Do not re-offer an idea the human already rejected.
-- **New format? Ask for references.** If this is a format the channel has not made before, ask the human for 2-3 reference examples of work they like before drafting anything.
+- **New format? Ask for references.** If this is a format the channel has not made before, ask the human for 3-5 varied references, each with "take this / not this", and store them in `team/creative/references/` before drafting anything.
 - **Deliver 2-3 options that differ on purpose, never one.** When it turns a teardown into your own draft hooks, offer, for example, one that borrows the structure of the example, one that adapts a different formula, and one that breaks the pattern on purpose. Each option gets one line saying what it tests. Three variations of one idea count as one option.
 - **Measurable checks (pass/fail, report values):** the pasted text is quoted accurately; the hook formula is named from the formulas reference and the evidence is cited from the text; the blank template has no leftover copy from the source; the template is not a copy of someone else's wording. Run them on every option and fix failures before the human sees anything.
 - **Taste questions go to the human.** Anything with no measurable way to fail (which option is more clickable, funnier, more on-brand in feel, whether it "sounds like us") is a taste question. Put it to the human as a question; do not answer it yourself.
@@ -118,4 +118,4 @@ This skill is an analysis aid: the teardown is evidence, and the human decides t
 
 - `ig-caption-writer` - use the extracted caption template to draft your own
 - `ig-carousel-planner` - use the extracted carousel template *(upstream, not included here)*
-- `ig-humanizer --mode audit` - audit your draft before shipping *(upstream, not included here)*
+- `copy-review` - check your draft against the copy guide and your kill list and voice rules in `brand/BRAND.md` (build them from what the owner actually deletes; generic AI-word lists are mostly English)

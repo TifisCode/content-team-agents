@@ -128,7 +128,7 @@ rules:
 This skill drafts; the human decides taste.
 
 - **Read first.** Before drafting, read `team/creative/taste.md` (past picks, rejections and the reasons) and `brand/BRAND.md`. Do not re-offer an idea the human already rejected.
-- **New format? Ask for references.** If this is a format the channel has not made before, ask the human for 2-3 reference examples of work they like before drafting anything.
+- **New format? Ask for references.** If this is a format the channel has not made before, ask the human for 3-5 varied references, each with "take this / not this", and store them in `team/creative/references/` before drafting anything.
 - **Deliver 2-3 options that differ on purpose, never one.** For example, a rewrite that leads with the audience's problem, one that leads with the format or promise, and one that leads with the creator's point of view. For trailer and banner ideas, offer two different directions. Each option gets one line saying what it tests. Three variations of one idea count as one option.
 - **Measurable checks (pass/fail, report values):** channel name and handle consistent across banner, About and links; About text front-loads the keyword and fits the visible fold; exactly one primary link; banner key content inside the safe area that shows on mobile; watermark and trailer present; every asset follows the brand guide. Run them on every option and fix failures before the human sees anything.
 - **Taste questions go to the human.** Anything with no measurable way to fail (which option is more clickable, funnier, more on-brand in feel, whether it "sounds like us") is a taste question. Put it to the human as a question; do not answer it yourself.
