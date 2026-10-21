@@ -6,6 +6,8 @@ They were adapted from MIT-licensed open-source skills (see [Attribution](#attri
 
 The methods are generic. Adapt the examples to your own niche and audience.
 
+**These skills draft; you decide.** Measurable work (title length, safe zones, hashtag counts, legibility at phone size) can be checked by an agent. Taste cannot. Every creative skill here delivers 2-3 deliberately different options, each with a line on what it tests, runs the measurable checks, and then hands the taste call to a human, who also logs the pick and the reason so the next brief starts from it. The analysis skills end the same way: the diagnosis is evidence, and the human chooses the actions. See [../docs/CREATIVE-LOOP.md](../docs/CREATIVE-LOOP.md) for the full loop.
+
 ## The skills
 
 | Skill | What it produces |

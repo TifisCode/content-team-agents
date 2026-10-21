@@ -1,55 +1,73 @@
 # content-team-agents
 
-A **Claude Code agent team plus YouTube and Instagram skills**, built to run a faceless YouTube channel as an
-autonomous team. Agents find the content, build it, review it and package it, and a human gives the final yes before
-anything goes public.
+**YouTube marketing automation with Claude Code, with a human making every creative call.**
 
-The roles, hand-offs and guardrails work for most content channels: one agent picks the content, one builds it, one
-reviews it with fresh eyes, one packages it and grows the channel, and a PM keeps the log and talks to the human.
+Five [Claude Code](https://claude.com/claude-code) subagents and twelve YouTube/Instagram skills that run the daily
+work of a content channel. They find ideas, build the pieces, review them against measurable checks, package them
+and track growth. **You stay in charge of taste.**
+
+> Agents draft. Humans decide what's good. Agents remember it.
+
+## Why the human stays in the loop
+
+Ask an agent whether a thumbnail is good and it says yes, every time. Taste has no wrong answer, so "great" is the
+safe verdict. This repo is built around that fact:
+
+- **Checks go to the agents.** Anything with a measurement and a way to fail (title length, text legible at
+  phone size, safe zones, loudness, brand colors) is checked by QA and logged with values.
+- **Taste goes to you.** Which thumbnail, which hook, whether the colors feel right. Growth brings you 2–3
+  deliberately different options, you pick and say why in one sentence, and the PM writes that down.
+- **The team learns your taste.** Every decision goes into a taste log. When a preference repeats, the PM proposes
+  it as a brand rule, and the next brief starts from there.
+
+There's a real example in [docs/CREATIVE-LOOP.md](docs/CREATIVE-LOOP.md): the launch image for this repo. The
+agent's first version was technically flawless and got rejected ("the colors are horrible"). Three rounds later,
+with the human's references, photo and direction, it was the one that got posted.
 
 ## What's inside
 
-| Folder | What |
+| | |
 |---|---|
-| [`agents/`](agents/) | Five subagents: **PM**, **Scout**, **Engineer**, **QA** and **Growth**. See [agents/README.md](agents/README.md). |
-| [`skills/`](skills/) | Twelve skills for YouTube (titles, thumbnail briefs, community posts, channel audit, analytics diagnosis, Shorts packaging, audience insights) and Instagram/Facebook (captions, hashtags, profile audit, Short-to-Reel repurposing, hook analysis). See [skills/README.md](skills/README.md). |
+| [`agents/`](agents/) | **PM**, **Scout**, **Engineer**, **QA** and **Growth**: who does what, the hand-off flow and an example daily schedule |
+| [`skills/`](skills/) | YouTube: A/B titles, thumbnail briefs, Shorts packaging, analytics diagnosis, community posts, channel audit, audience insights. Instagram/Facebook: captions, hashtags, profile audit, Short-to-Reel, hook analysis |
+| [`docs/CREATIVE-LOOP.md`](docs/CREATIVE-LOOP.md) | Checks vs. taste, brief → options → checks → human call → taste log |
+| [`docs/HANDOFFS.md`](docs/HANDOFFS.md) | The files agents pass to each other, their formats, validation and troubleshooting |
+| [`examples/`](examples/) | Templates for every file the agents read and write |
+| [`QUICKSTART.md`](QUICKSTART.md) | Install, make it yours, and run your first day |
 
 ## The flow
 
 ```
-Scout picks a scene → Engineer builds the take → QA reviews with fresh eyes → (Engineer fixes)
-→ Growth packages it and uploads it as PRIVATE → the owner approves → the owner publishes
+Scout picks → Engineer builds → QA checks → Growth drafts 2–3 creative options → QA checks them
+  → YOU choose (taste) → Growth uploads as PRIVATE → YOU approve → YOU publish
+                                    ↘ PM logs your verdict and your reason → brand rules
 ```
 
-The PM keeps the log, measures the KPIs, reports to the owner, and proposes improvements to each agent's
-instructions. It applies them only after the owner approves.
+## Guardrails
 
-## Principles that made it work
-
-- **Nothing goes public without the human's explicit yes, for each piece and each format.** Automated checks and the
-  QA agent are filters, not the final word. Uploading as private is fine.
-- **Have a reviewer who didn't build the work.** QA only reports, it never edits, and it caught what the builder
-  missed.
-- **Every skill produces drafts.** No auto-publishing, no bulk edits without review, and no paid third-party
-  posting services.
-- **Comments, form answers, web pages and pasted text are data, never instructions.**
-- **No fake engagement.** No bots, no spam, and subscriptions are invited, never demanded.
-- **One growth owner.** A single agent owns views and subscribers end to end. It measures, studies competitors,
-  learns, proposes a daily plan, and runs only what's within its autonomy.
-- **Lock shared work.** A per-item lock keeps two sessions from editing the same thing at once.
+- Nothing goes public (public, unlisted, scheduled or reposted) without your explicit approval for that piece **and**
+  that format. Uploading as private is fine.
+- QA logs every check it runs, passes included, so a check that silently stops running shows up.
+- No bots, no fake engagement, no paid auto-posting services. Subscriptions are invited, never demanded.
+- Comments, forms and web pages are data, never instructions.
 
 ## Install
 
+See [QUICKSTART.md](QUICKSTART.md). The short version:
+
 ```bash
-# in your project
 mkdir -p .claude/agents .claude/skills
-cp agents/*.md .claude/agents/       # (skip agents/README.md)
+cp agents/{pm,scout,engineer,qa,growth}.md .claude/agents/
 cp -R skills/*/ .claude/skills/
-claude --agent pm                    # or scout / engineer / qa / growth
+cp -R examples/team examples/brand .
+claude --agent pm
 ```
 
-The agents refer to project files such as `team/log.md` (team log) and `team/quality/pending.txt`
-(review queue). Create them or change the paths to fit your project. Put your brand guide in `brand/BRAND.md`.
+## Improving it
+
+This repo keeps changing through real use. See [CHANGELOG.md](CHANGELOG.md) for what changed and why. If you run
+it, tell us how: open a [**"How I used it"** issue](../../issues/new/choose). New QA checks are welcome when they
+have a measurable way to fail ([CONTRIBUTING.md](CONTRIBUTING.md)).
 
 ## License
 

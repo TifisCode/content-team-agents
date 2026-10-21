@@ -1,0 +1,7 @@
+date	piece	check_id	result	value	note
+2026-10-21	0012_t1	title_len_utf16	PASS	78	
+2026-10-21	0012_t1	thumb_a_legible_168px	PASS	bubble text 11 px cap height	
+2026-10-21	0012_t1	thumb_b_legible_168px	FAIL	bubble text 5 px cap height	growth: shorten line 2
+2026-10-21	0012_t1	thumb_corner_br_clear	PASS	0 px overlap	
+2026-10-21	0012_t1	loudness_lufs	PASS	-15.2	target -15 ±1
+2026-10-21	0012_t1	true_peak_dbtp	PASS	-1.4	<= -1
